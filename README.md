@@ -1,5 +1,5 @@
-# CodeCademy_Cpp
-> Challenges and Reviews from Learn C++
+# Learn C++
+> Challenges and Reviews from CodeCademy Learn C++
 
 
 ## Table of Contents
