@@ -137,3 +137,92 @@ int main() {
     break;
 }
 }
+
+/*
+========== LOGICAL OPERATORS ==========
+REVIEW
+Let’s try a challenging problem that will put all your brain cells to the test.
+
+Write a leap_year.cpp program that:
+
+Takes a year as input.
+Checks to see if the year is a four-digit number.
+Displays whether or not the year falls on a leap year.
+There are 3 criteria that must be taken into account to identify a leap year:
+
+If the year can be evenly divided by 4 then it is a leap year, however…
+If that year can be evenly divided by 100, and it is not evenly divided by 400, then it is NOT a leap year.
+If that year is evenly divisible by 400, then it is a leap year.
+*/
+#include <iostream>
+
+int main(){
+  int year;
+
+  std::cout << "Enter a year: ";
+  std::cin >> year;
+
+  if(year < 1000 && year > 9999){
+    std::cout << "Not a year.\n";
+  }
+  else if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+    std::cout << year << " is a Leap year.\n";
+  }else{
+    std::cout << year << " is not a Leap year.\n";
+  }
+}
+
+/*
+========== LOOPS ==========
+WHILE LOOPS
+As an example of iteration, 
+we have the first program ever to run on a stored-program computer (the EDSAC). 
+It was written and run by David Wheeler in the computer laboratory at Cambridge University, England, 
+on May 6th, 1948, to calculate and print a simple list of squares like the following:
+0   0
+1   1
+2   4
+3   9
+4   16
+5   25
+6   36
+7   49
+8   64
+9   81
+*/
+#include <iostream>
+
+int main() {
+  
+  int i = 0;
+  int square = 0;
+  
+  // Write a while loop here:
+  while(i < 10){
+    square = i * i;
+    std::cout << i <<"   " << square << "\n";
+    i++;
+  } 
+}
+
+/*
+FOR LOOPS
+Write a 99bottles.cpp program that prints the verses of the “99 Bottles” song. Each stanza goes something like this:
+
+i bottles of pop on the wall.
+Take one down and pass it around.
+i-1 bottles of pop on the wall.
+*/
+#include <iostream>
+
+int main() {
+
+  // Write a for loop here:
+  for(int i=99; i != 0; i--){
+    std::cout << i <<" bottles of pop on the wall.\nTake one down and pass it around.\n" << i-1 << " bottles of pop on the wall.\n\n";
+  }
+}
+
+/*
+========== ERRORS ==========
+*/
