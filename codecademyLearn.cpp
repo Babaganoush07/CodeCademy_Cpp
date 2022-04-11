@@ -207,7 +207,8 @@ int main() {
 
 /*
 FOR LOOPS
-Write a 99bottles.cpp program that prints the verses of the “99 Bottles” song. Each stanza goes something like this:
+Write a 99bottles.cpp program that prints the verses of the “99 Bottles” song. 
+Each stanza goes something like this:
 
 i bottles of pop on the wall.
 Take one down and pass it around.
@@ -225,4 +226,85 @@ int main() {
 
 /*
 ========== ERRORS ==========
+REVIEW
+Because your friend didn’t debug along the way, they ended up with a super buggy program. 
+Can you be a bug detective and help them debug their program?
+*/
+#include <iostream>
+#include <stdlib.h>
+#include <ctime>
+
+int Main() {
+// int main() {
+   
+  srand (time(NULL));
+  int	fortune = rand() % 10;
+  
+  if (fortune = 0) {
+  // if (fortune == 0) {
+    std::cout << "Flattery will go far tonight.\n";
+  
+  } else if (fortune == 1) {
+    std::cout << "Don't behave with cold manners.\n"
+    // std::cout << "Don't behave with cold manners.\n";
+
+  } else if (fortune == 2) {
+    std::cout << "May you someday be carbon neutral\n";
+    
+  } else if (fortune == 3) {
+    std::cout << "You have rice in your teeth.\n";
+    
+  } else if (fortune == 4) {
+    std::cout << "A conclusion is simply the place where you got tired of thinking.\n";
+    
+  } else if (fortune ==) {
+  // } else if (fortune == 5) {
+    std::cout << "No snowflake feels responsible in an avalanche.\n";
+    
+  } else if (fortune == 6) {
+    std::cout << "He who laughs last is laughing at you.\n";
+    
+  } else if (fortune == 7) {
+    std::cout << "If you look back, you'll soon be going that way.\n";
+    
+  } else if (fortune == 8) {
+    std::cout << "You will die alone and poorly dressed.\n";
+      
+  } else if (fortune == 9 {
+  // } else if (fortune == 9) {
+    std::cout << "The fortune you seek is in another cookie.\n";
+      
+  }
+  
+}
+/*
+========== VECTORS ==========
+REVIEW
+Write a program to find the sum of even numbers and the product of odd numbers in a vector.
+For example:
+Suppose we have a vector that is {2, 4, 3, 6, 1, 9}.
+Then the program should output:
+Sum of even numbers is 12
+Product of odd numbers is 27
+*/
+#include <iostream>
+#include <vector>
+
+int main(){
+  int even = 0;
+  int odd = 1;
+  std::vector<int> vector = {2, 4, 3, 6, 1, 9};
+  for(int i = 0; i < vector.size(); i++){
+    if(vector[i] %2 == 0){
+      even = even + vector[i];
+    }else{
+      odd = odd * vector[i];
+    }
+  }
+  std::cout << "Sum of even numbers is "<< even << "\n";
+  std::cout << "Product of odd numbers is "<< odd << "\n";
+}
+
+/*
+========== FUNCTIONS ==========
 */
