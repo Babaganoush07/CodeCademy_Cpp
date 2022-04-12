@@ -17,6 +17,7 @@
 
 ## Technologies Used
 - [CodeCademy.com](https://www.codecademy.com/)
+- [w3resource.com](https://www.w3resource.com/cpp-exercises/basic/index.php#EDITOR)
 
 
 ## Project Status
