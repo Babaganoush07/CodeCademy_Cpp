@@ -367,7 +367,6 @@ int main() {
 /*
 ========== CODE CHALLENGE: C++ FUNCTIONS ==========
 ========== AVERAGE ==========
-1.
 Write a function average() that takes:
 A double parameter named num1.
 A double parameter named num2.
@@ -382,5 +381,49 @@ double average(double num1, double num2){
 int main() {
   std::cout << average(42.0, 24.0) << "\n";
   std::cout << average(1.0, 2.0) << "\n";
+}
+
+/*
+========== CODE CHALLENGE: C++ FUNCTIONS ==========
+========== TENTH POWER ==========
+Write a function named tenth_power() that has:
+An int parameter named num.
+The function should return num raised to the 10th power.
+*/
+#include <iostream>
+#include <cmath>
+
+int tenth_power(int num){
+  return pow(num, 10);
+}
+
+int main() {
+  std::cout << tenth_power(0) << "\n";
+  std::cout << tenth_power(1) << "\n";
+  std::cout << tenth_power(2) << "\n";
+}
+
+/*
+========== CODE CHALLENGE: C++ FUNCTIONS ==========
+========== FIRST THREE MULTIPLES ==========
+Write a function named first_three_multiples() that has:
+An int parameter named num.
+The function should return an std::vector of the first three multiples of num in ascending order.
+For example, first_three_multiples(7) 
+should return a vector with 7, 14, and 21.
+*/
+#include <iostream>
+#include <vector>
+
+// Define first_three_multiples() here:
+std::vector<int> first_three_multiples(int num) {
+  std::vector<int> multiples{num, num * 2, num * 3};
+  return multiples; 
+}
+
+int main() {
+  for (int element : first_three_multiples(8)) {
+    std::cout << element << "\n";
+  } 
 }
 
