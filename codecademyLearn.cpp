@@ -307,4 +307,38 @@ int main(){
 
 /*
 ========== FUNCTIONS ==========
+Try using functions to rewrite (or refactor) that IT conversation program we showed you.
 */
+#include <iostream>
+int check_in_attempt = 1;
+
+void hello_it(){
+  std::string on_off_attempt;
+  std::cout << "Hello. IT.\n";
+  std::cout << "Have you tried turning it off and on again? y/n\n";
+  std::cin >> on_off_attempt;
+}
+
+void check_in(int x){
+  check_in_attempt ++;
+  if(x == 1){
+    // Check in with Jenn
+    std::cout << "Oh hi Jen!\n";
+  }else if(x == 2){
+    // Check in with Roy
+    std::cout << "You stole the stress machine? But that's stealing!\n";
+  }
+}
+
+int main() {
+  // Conduct IT support
+  hello_it();
+  check_in(check_in_attempt);
+    
+  // Conduct IT support again...
+  hello_it();
+  check_in(check_in_attempt);
+    
+  // Conduct IT support yet again...zzzz...
+  hello_it();  
+}
