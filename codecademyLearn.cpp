@@ -426,3 +426,80 @@ int main() {
   } 
 }
 
+/*
+========== CODE CHALLENGE: C++ FUNCTIONS ==========
+========== WATER PLANT ==========
+Define a function needs_water() that accepts:
+
+An int number of days since the previous watering.
+A bool value is_succulent. (A value of true would indicate that the plant is a succulent.)
+Inside the function, you’ll need some conditional logic:
+
+If is_succulent is false and days is greater than 3, 
+return "Time to water the plant.".
+
+If is_succulent is true and days is 12 or less, 
+return "Don't water the plant!".
+
+If is_succulent is true and days is greater than or equal to 13, 
+return "Go ahead and give the plant a little water.".
+
+Otherwise, return "Don't water the plant!".
+
+Note: Don’t print the strings; return them from the function.
+*/
+#include <iostream>
+
+std::string needs_water(int days, bool is_succulent){
+  if(is_succulent == false and days > 3){
+    return "Time to water the plant.";
+  }else if(is_succulent == true and days <= 12){
+    return "Don't water the plant!";
+  }else if(is_succulent == true and days >= 13){
+    return "Go ahead and give the plant a little water.";
+  }else{
+    return "Don't water the plant!";
+  }
+}
+
+int main() {
+  std::cout << needs_water(10, false) << "\n";
+}
+
+/*
+========== CODE CHALLENGE: C++ FUNCTIONS ==========
+========== PALINDROME ==========
+Define a function is_palindrome() that takes:
+
+An std::string parameter text.
+The function should return:
+
+true if text is a palindrome.
+false if text is not a palindrome.
+(A palindrome is any text that has the same characters backwards as it does forwards. For example, “hannah” and “racecar” are palindromes, while “menu” and “aardvark” are not.)
+
+We will not test for edge cases such as capitalization or spaces.
+*/
+#include <iostream>
+
+bool is_palindrome(std::string text) {
+  
+  std::string reversetext = "";
+  
+  for (int i = text.size() - 1; i >= 0; i--) {
+    reversetext += text[i];
+  }
+  
+  if (reversetext == text) {
+    return true;
+  }
+  return false;
+}
+
+int main() {
+  
+  std::cout << is_palindrome("madam") << "\n";
+  std::cout << is_palindrome("ada") << "\n";
+  std::cout << is_palindrome("lovelace") << "\n";
+}
+
