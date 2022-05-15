@@ -135,7 +135,7 @@ int main() {
   default:
     std::cout << "Invalid\n";
     break;
-}
+} // END SWITCH
 }
 
 /*
@@ -169,7 +169,7 @@ int main(){
     std::cout << year << " is a Leap year.\n";
   }else{
     std::cout << year << " is not a Leap year.\n";
-  }
+  } // END IF ELSE
 }
 
 /*
@@ -202,7 +202,7 @@ int main() {
     square = i * i;
     std::cout << i <<"   " << square << "\n";
     i++;
-  } 
+  } // END WHILE
 }
 
 /*
@@ -221,7 +221,7 @@ int main() {
   // Write a for loop here:
   for(int i=99; i != 0; i--){
     std::cout << i <<" bottles of pop on the wall.\nTake one down and pass it around.\n" << i-1 << " bottles of pop on the wall.\n\n";
-  }
+  } // END FOR
 }
 
 /*
@@ -274,7 +274,7 @@ int Main() {
   // } else if (fortune == 9) {
     std::cout << "The fortune you seek is in another cookie.\n";
       
-  }
+  } // END IF ELSE
   
 }
 /*
@@ -299,8 +299,8 @@ int main(){
       even = even + vector[i];
     }else{
       odd = odd * vector[i];
-    }
-  }
+    } // END IF ELSE
+  } // END FOR
   std::cout << "Sum of even numbers is "<< even << "\n";
   std::cout << "Product of odd numbers is "<< odd << "\n";
 }
@@ -317,7 +317,7 @@ void hello_it(){
   std::cout << "Hello. IT.\n";
   std::cout << "Have you tried turning it off and on again? y/n\n";
   std::cin >> on_off_attempt;
-}
+} // END hello_it
 
 void check_in(int x){
   check_in_attempt ++;
@@ -327,8 +327,8 @@ void check_in(int x){
   }else if(x == 2){
     // Check in with Roy
     std::cout << "You stole the stress machine? But that's stealing!\n";
-  }
-}
+  } // END IF ELSE
+} // END check_in
 
 int main() {
   // Conduct IT support
@@ -358,7 +358,7 @@ Bond, James Bond
 
 void introduction(std::string first_name, std::string last_name){
   std::cout << last_name << ", " << first_name << " " << last_name << "\n";
-}
+} // END introduction
 
 int main() {  
   introduction("Beyonce", "Knowles");
@@ -376,7 +376,7 @@ The function should return a double that is the average of the arguments passed 
 
 double average(double num1, double num2){
   return (num1 + num2) / 2;
-}
+} // END average
 
 int main() {
   std::cout << average(42.0, 24.0) << "\n";
@@ -395,7 +395,7 @@ The function should return num raised to the 10th power.
 
 int tenth_power(int num){
   return pow(num, 10);
-}
+} // END tenth_power
 
 int main() {
   std::cout << tenth_power(0) << "\n";
@@ -418,7 +418,7 @@ should return a vector with 7, 14, and 21.
 std::vector<int> first_three_multiples(int num) {
   std::vector<int> multiples{num, num * 2, num * 3};
   return multiples; 
-}
+} // END first_three_multiples
 
 int main() {
   for (int element : first_three_multiples(8)) {
@@ -459,8 +459,8 @@ std::string needs_water(int days, bool is_succulent){
     return "Go ahead and give the plant a little water.";
   }else{
     return "Don't water the plant!";
-  }
-}
+  } // END IF ELSE
+} // END needs_water
 
 int main() {
   std::cout << needs_water(10, false) << "\n";
@@ -488,13 +488,13 @@ bool is_palindrome(std::string text) {
   
   for (int i = text.size() - 1; i >= 0; i--) {
     reversetext += text[i];
-  }
+  } // END FOR
   
   if (reversetext == text) {
     return true;
-  }
+  } // END IF
   return false;
-}
+} // END is_palendrom
 
 int main() {
   
